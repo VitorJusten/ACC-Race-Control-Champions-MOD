@@ -1,0 +1,22 @@
+[20260306-16:33:21-115] INFO    main                 Main.main()                                            : Version: 1.5.8
+[20260306-16:33:23-957] SEVERE  Animation Thread     Main$UncoughtExceptionHandler.uncaughtException()      : Uncought exception:
+java.lang.RuntimeException: Error to load championship data
+	at racecontrol.client.model.Championship.<init>(Championship.java:43)
+	at racecontrol.gui.app.livetiming.timing.tablemodels.ChampionshipTableModel.<init>(ChampionshipTableModel.java:22)
+	at racecontrol.gui.app.livetiming.timing.LiveTimingTableController.<init>(LiveTimingTableController.java:62)
+	at racecontrol.gui.app.livetiming.LiveTimingController.<init>(LiveTimingController.java:52)
+	at racecontrol.gui.app.AppController.<init>(AppController.java:58)
+	at racecontrol.gui.RaceControlApplet.setup(RaceControlApplet.java:95)
+	at processing.core.PApplet.handleDraw(PApplet.java:2412)
+	at processing.awt.PSurfaceAWT$12.callDraw(PSurfaceAWT.java:1557)
+	at processing.core.PSurfaceNone$AnimationThread.run(PSurfaceNone.java:316)
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4686)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4584)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3431)
+	at racecontrol.client.model.Championship.<init>(Championship.java:32)
+	... 8 more
+
+[20260306-16:33:25-468] INFO    AWT-EventQueue-0     RaceControlApplet.exit()                               : Stopping Visualisation

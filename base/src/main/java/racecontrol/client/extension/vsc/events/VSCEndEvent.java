@@ -1,0 +1,33 @@
+/*
+ * Copyright (c) 2021 Leonard Schüngel
+ * 
+ * For licensing information see the included license (LICENSE.txt)
+ */
+package racecontrol.client.extension.vsc.events;
+
+import racecontrol.client.protocol.SessionId;
+import racecontrol.eventbus.Event;
+
+/**
+ *
+ * @author Leonard
+ */
+public class VSCEndEvent extends Event {
+
+    private final SessionId sessionId;
+    private final int sessionTime;
+
+    public VSCEndEvent(SessionId sessionId, int sessionTime) {
+        this.sessionId = sessionId;
+        this.sessionTime = sessionTime;
+    }
+
+    public SessionId getSessionId() {
+        return sessionId;
+    }
+
+    public int getSessionTime() {
+        return sessionTime;
+    }
+
+}

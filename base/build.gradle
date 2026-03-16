@@ -1,0 +1,79 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'application'
+}
+
+def distributionName = "ACC-Race-Control"
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+application {
+    mainClass = 'racecontrol.Main'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs "src/main/resources", "../changelog"
+        }
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+
+    implementation 'org.processing:core:3.3.6'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.12.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.0'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.12.0'
+    implementation 'com.google.apis:google-api-services-sheets:v4-rev20200707-1.30.10'
+    implementation 'com.google.oauth-client:google-oauth-client-jetty:1.30.4'
+    implementation 'com.google.api-client:google-api-client:1.30.4'
+}
+
+tasks.named("run") {
+    dependsOn tasks.named("installDist")
+    workingDir = file("$buildDir/install/$distributionName")
+    jvmArgs("-splash:data/loading.png")
+}
+
+distributions {
+    main {
+        distributionBaseName = distributionName
+        contents {
+            into("/Google Sheets API Key") {
+                from "credentials"
+            }
+        }
+    }
+}
+
+tasks.register("copyLibs", Copy) {
+    group = "Release"
+    from configurations.runtimeClasspath
+    from tasks.named("jar")
+    into "$buildDir/release/$distributionName/lib"
+}
+
+tasks.register("copyDist", Copy) {
+    group = "Release"
+    from "src/dist"
+    into "$buildDir/release/$distributionName"
+}
+
+tasks.register("buildRelease", Zip) {
+    group = "Release"
+    dependsOn "copyLibs", "copyDist", "installDist"
+    from "$buildDir/release/$distributionName"
+	archiveFileName.set(distributionName + ".zip")
+    destinationDirectory.set(file("$buildDir/release"))
+}
