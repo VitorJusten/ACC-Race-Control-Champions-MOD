@@ -77,3 +77,7 @@ tasks.register("buildRelease", Zip) {
 	archiveFileName.set(distributionName + ".zip")
     destinationDirectory.set(file("$buildDir/release"))
 }
+
+tasks.withType(Copy).configureEach {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
