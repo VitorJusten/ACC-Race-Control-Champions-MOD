@@ -41,4 +41,61 @@ https://docs.google.com/spreadsheets/d/1SSMe8Vte0beENZtI6sL49uqkfW1_s01DtV1A2Kue
 
 Without this tool that would not be possible.
 
+# Champions MOD
 
+A modification developed by **Vitor Justen** that calculates **real-time championship standings** based on drivers' positions during a race.
+
+The system reads drivers and points rules from **JSON configuration files** and dynamically calculates the championship standings, which can be viewed directly in the **Live Timing** section.
+
+---
+
+# Features
+
+- Real-time championship standings calculation
+- Simple JSON configuration
+- Customizable points system
+- Live integration with race position data
+- Lightweight and easy to configure
+
+---
+
+# Live Championship Table
+
+The updated championship table can be accessed inside the **Live Timing** interface:
+
+After building, the executable will be located at:
+
+```base/build/release/ACC-Race-Control```
+
+# Championship Configuration
+
+The championship system is configured using two JSON files:
+
+- `championship/points.json`
+- `championship/drivers.json`
+
+These files define the **points system** and the **drivers participating in the championship**.
+
+---
+
+## points.json
+
+This file defines how many points each finishing position receives.
+
+Example:
+
+`points.json`
+```points.json
+{
+    "1": 25,
+    "2": 20
+}
+```
+
+`drivers.json`
+```drivers.json
+{
+    "Vitor Justen": 468,
+    "Lax Versilton": 356
+}
+```
