@@ -1,9 +1,9 @@
-## GIFLIB v5.1.8
+## GIFLIB v5.2.2
 
 ### GIFLIB License
 ```
 
-The GIFLIB distribution is Copyright (c) 1997 Eric S. Raymond
+The GIFLIB distribution is Copyright (c) 1997  Eric S. Raymond
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,21 +23,24 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+---------------------------------
+The below applies to the following file(s):
+giflib/openbsd-reallocarray.c
 
-https://sourceforge.net/p/giflib/code/ci/master/tree/openbsd-reallocarray.c
+Copyright (C) 2008 Otto Moerbeek <otto@drijf.net>
+SPDX-License-Identifier: MIT
 
-Copyright (c) 2008 Otto Moerbeek <otto@drijf.net>
 
-Permission to use, copy, modify, and distribute this software for any
-purpose with or without fee is hereby granted, provided that the above
-copyright notice and this permission notice appear in all copies.
+== Authors ==
 
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
-WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
-MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
-ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
-WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
-ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
-OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+Gershon Elber <gershon[AT]cs.technion.sc.il>
+original giflib code
+
+Toshio Kuratomi <toshio[AT]tiki-lounge.com>
+uncompressed gif writing code
+former maintainer
+
+Eric Raymond <esr[AT]snark.thyrsus.com>
+current as well as long time former maintainer of giflib code
 
 ```
