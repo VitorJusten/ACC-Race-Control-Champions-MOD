@@ -22,7 +22,7 @@ import racecontrol.gui.lpui.table.LPTableColumn;
 public class ChampionshipDriversColumn extends LPTableColumn {
 
     public ChampionshipDriversColumn() {
-        super("Drivers");
+        super("Driver");
         setMinWidth(140);
         setPriority(5);
         setCellRenderer(this::driversRenderer);

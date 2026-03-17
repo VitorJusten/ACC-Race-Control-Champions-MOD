@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import processing.core.PApplet;
 import racecontrol.client.model.Car;
 import racecontrol.client.model.Championship;
+import racecontrol.gui.LookAndFeel;
 import racecontrol.gui.app.livetiming.timing.tablemodels.columns.CarNumberColumn;
 import racecontrol.gui.app.livetiming.timing.tablemodels.columns.ChampionshipDriversColumn;
 import racecontrol.gui.app.livetiming.timing.tablemodels.columns.PositionColumn;
@@ -51,27 +52,24 @@ public class ChampionshipTableModel extends LiveTimingTableModel {
 						.setMinWidth(140)
 						.setCellRenderer(this::carRenderer),
 
-				new LPTableColumn("Team")
-						.setMinWidth(160)
-						.setCellRenderer(this::teamRenderer),
-
-				new LPTableColumn("Points")
+				new LPTableColumn("Total Points")
 						.setMinWidth(90)
 						.setPriority(3)
-						.setCellRenderer(this::pointsRenderer)
+						.setCellRenderer(this::pointsRenderer),
+						
+				new LPTableColumn("Points +")
+						.setMinWidth(90)
+						.setPriority(3)
+						.setCellRenderer(this::pointsGainedRenderer),
+						
 		};
 	}
 
 	private void carRenderer(PApplet applet, RenderContext context) {
 		Car car = (Car) context.object;
 		applet.textAlign(PApplet.CENTER, PApplet.CENTER);
+		applet.fill(LookAndFeel.COLOR_WHITE);
 		applet.text(car.carModel.getName(), context.width / 2f, context.height / 2f);
-	}
-
-	private void teamRenderer(PApplet applet, RenderContext context) {
-		Car car = (Car) context.object;
-		applet.textAlign(PApplet.CENTER, PApplet.CENTER);
-		applet.text(car.teamName, context.width / 2f, context.height / 2f);
 	}
 
 	private void pointsRenderer(PApplet applet, RenderContext context) {
@@ -79,6 +77,13 @@ public class ChampionshipTableModel extends LiveTimingTableModel {
 		BigDecimal total = calculatePoints(car);
 		applet.textAlign(PApplet.CENTER, PApplet.CENTER);
 		applet.text(total.toString(), context.width / 2f, context.height / 2f);
+	}
+	
+	private void pointsGainedRenderer(PApplet applet, RenderContext context) {
+		Car car = (Car) context.object;
+		BigDecimal total = racePoints.getOrDefault(String.valueOf(car.position), BigDecimal.ZERO);
+		applet.textAlign(PApplet.CENTER, PApplet.CENTER);
+		applet.text("+ " + total.toString(), context.width / 2f, context.height / 2f);
 	}
 
 	private BigDecimal calculatePoints(Car car) {
