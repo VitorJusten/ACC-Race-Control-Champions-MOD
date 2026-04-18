@@ -1,5 +1,10 @@
 package racecontrol.gui.app.livetiming.timing.tablemodels;
 
+import static processing.core.PConstants.CENTER;
+import static processing.core.PConstants.LEFT;
+import static racecontrol.gui.LookAndFeel.COLOR_WHITE;
+import static racecontrol.gui.LookAndFeel.LINE_HEIGHT;
+
 import java.math.BigDecimal;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -10,8 +15,10 @@ import racecontrol.client.model.Championship;
 import racecontrol.gui.LookAndFeel;
 import racecontrol.gui.app.livetiming.timing.tablemodels.columns.CarNumberColumn;
 import racecontrol.gui.app.livetiming.timing.tablemodels.columns.ChampionshipDriversColumn;
+import racecontrol.gui.app.livetiming.timing.tablemodels.columns.ConstructorColumn;
 import racecontrol.gui.app.livetiming.timing.tablemodels.columns.PositionColumn;
 import racecontrol.gui.lpui.table.LPTable.RenderContext;
+import racecontrol.gui.lpui.table.LPTable;
 import racecontrol.gui.lpui.table.LPTableColumn;
 
 /**
@@ -46,12 +53,15 @@ public class ChampionshipTableModel extends LiveTimingTableModel {
 		return new LPTableColumn[] {
 				new PositionColumn(),
 			    new ChampionshipDriversColumn(), 
-				new CarNumberColumn(),
-
-				new LPTableColumn("Car")
-						.setMinWidth(140)
-						.setCellRenderer(this::carRenderer),
-
+	            new ConstructorColumn(),
+	            new CarNumberColumn(),
+	            
+	            new LPTableColumn("Class")
+	            		.setMaxWidth(100)
+	            		.setMinWidth(100)
+	            		.setTextAlign(LEFT)
+	            		.setCellRenderer((applet, context) -> carClassRenderer(applet, context)),
+	            
 				new LPTableColumn("Total Points")
 						.setMinWidth(90)
 						.setPriority(3)
@@ -64,17 +74,20 @@ public class ChampionshipTableModel extends LiveTimingTableModel {
 						
 		};
 	}
-
-	private void carRenderer(PApplet applet, RenderContext context) {
-		Car car = (Car) context.object;
-		applet.textAlign(PApplet.CENTER, PApplet.CENTER);
-		applet.fill(LookAndFeel.COLOR_WHITE);
-		applet.text(car.carModel.getName(), context.width / 2f, context.height / 2f);
-	}
+	
+    private void carClassRenderer(PApplet applet, LPTable.RenderContext context) {
+        Car car = (Car) context.object;
+        String name = car.carModel.getCategory().getText();
+        applet.fill(COLOR_WHITE);
+        applet.textAlign(LEFT, CENTER);
+        applet.textFont(LookAndFeel.fontRegular());
+        applet.text(name, 10f, LINE_HEIGHT / 2f);
+    }
 
 	private void pointsRenderer(PApplet applet, RenderContext context) {
 		Car car = (Car) context.object;
 		BigDecimal total = calculatePoints(car);
+		applet.fill(COLOR_WHITE);
 		applet.textAlign(PApplet.CENTER, PApplet.CENTER);
 		applet.text(total.toString(), context.width / 2f, context.height / 2f);
 	}
@@ -82,6 +95,7 @@ public class ChampionshipTableModel extends LiveTimingTableModel {
 	private void pointsGainedRenderer(PApplet applet, RenderContext context) {
 		Car car = (Car) context.object;
 		BigDecimal total = racePoints.getOrDefault(String.valueOf(car.position), BigDecimal.ZERO);
+		applet.fill(COLOR_WHITE);
 		applet.textAlign(PApplet.CENTER, PApplet.CENTER);
 		applet.text("+ " + total.toString(), context.width / 2f, context.height / 2f);
 	}

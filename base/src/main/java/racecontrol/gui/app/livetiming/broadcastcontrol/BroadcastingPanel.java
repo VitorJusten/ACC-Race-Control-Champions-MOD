@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021 Leonard Schüngel
+ * Copyright (c) 2021 Leonard Schï¿½ngel
  * 
  * For licensing information see the included license (LICENSE.txt)
  */
@@ -77,8 +77,8 @@ public class BroadcastingPanel
         addCarCameraButton("Wing", "Onboard", "Onboard3");
         //addCarCameraButton("Dash", "Drivable", "Dash");
         //addCarCameraButton("Cockpit", "Drivable", "Cockpit");
-        //addCarCameraButton("Helmet", "Drivable", "Helmet");
-        addCarCameraButton("Interior", "Onboard", "Onboard0");
+        addCarCameraButton("Helmet", "Drivable", "Helmet");
+//        addCarCameraButton("Interior", "Onboard", "Onboard0");
         addCarCameraButton("Driver", "Onboard", "Onboard1");
         addCarCameraButton("Passenger", "Onboard", "Onboard2");
         //addCarCameraButton("Chase", "Drivable", "Chase");
