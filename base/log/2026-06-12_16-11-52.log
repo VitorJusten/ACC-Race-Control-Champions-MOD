@@ -1,0 +1,17 @@
+[20260612-16:11:52-774] INFO    main                 Main.main()                                            : Version: 1.5.8
+[20260612-16:12:06-724] INFO    Animation Thread     ConnectionController.connectButtonPressed()            : Connect button pressed
+[20260612-16:12:06-724] INFO    Animation Thread     ConnectionController.connectWithInput()                : Try connecting with input
+[20260612-16:12:06-745] INFO    ACC connection thread AccConnection.run()                                    : Starting connection thread
+[20260612-16:12:06-750] SEVERE  ACC connection thread AccConnection.run()                                    : Socket is unreachable
+java.net.PortUnreachableException
+	at java.base/sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at java.base/sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:730)
+	at java.base/sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:702)
+	at java.base/sun.nio.ch.DatagramChannelImpl.tryBlockingReceive(DatagramChannelImpl.java:659)
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingReceive(DatagramChannelImpl.java:619)
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.receive(DatagramSocketAdaptor.java:193)
+	at java.base/java.net.DatagramSocket.receive(DatagramSocket.java:638)
+	at racecontrol.client.AccConnection.run(AccConnection.java:150)
+
+[20260612-16:12:06-755] INFO    ACC connection thread AccConnection.run()                                    : Connection thread done
+[20260612-16:12:16-947] INFO    AWT-EventQueue-0     RaceControlApplet.exit()                               : Stopping Visualisation

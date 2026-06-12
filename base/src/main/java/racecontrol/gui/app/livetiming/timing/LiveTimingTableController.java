@@ -59,7 +59,7 @@ public class LiveTimingTableController
     private final LiveTimingTableModel TABLE_MODEL_STATS = new StatsTableModel();
     private final LiveTimingTableModel TABLE_MODEL_DRIVERS = new DriversTableModel();
     private final LiveTimingTableModel TABLE_MODEL_RELATIVE = new RelativeTableModel();
-    private final LiveTimingTableModel TABLE_MODEL_CHAMPIONSHIP = new ChampionshipTableModel();
+    private final ChampionshipTableModel TABLE_MODEL_CHAMPIONSHIP = new ChampionshipTableModel();
     private final LiveTimingTableModel TABLE_MODEL_TEST = new TestTableModel();
     /**
      * Table model to display the live timing.
@@ -155,6 +155,11 @@ public class LiveTimingTableController
         return model.getName();
     }
 
+    public void useChampionshipRelative(boolean state) {
+        TABLE_MODEL_CHAMPIONSHIP.setSeparateByCategory(state);
+        updateTableModel();
+    }
+
     public void useRelative(boolean state) {
         if (state) {
             tableModels.clear();
@@ -175,3 +180,4 @@ public class LiveTimingTableController
     }
 
 }
+

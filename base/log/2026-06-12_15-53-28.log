@@ -1,0 +1,20 @@
+[20260612-15:53:28-772] INFO    main                 Main.main()                                            : Version: 1.5.8
+[20260612-15:53:37-144] INFO    Animation Thread     ConnectionController.connectButtonPressed()            : Connect button pressed
+[20260612-15:53:37-145] INFO    Animation Thread     ConnectionController.connectAutomatic()                : Try connecting with automatic settings
+[20260612-15:53:37-147] INFO    Animation Thread     ConnectionController.connectAutomatic()                : Configuration file not found at C:\Users\VitorJusten/Documents/Assetto Corsa Competizione/Config/broadcasting.json. Switching to input mode
+[20260612-15:53:45-027] INFO    Animation Thread     ConnectionController.connectButtonPressed()            : Connect button pressed
+[20260612-15:53:45-028] INFO    Animation Thread     ConnectionController.connectWithInput()                : Try connecting with input
+[20260612-15:53:45-051] INFO    ACC connection thread AccConnection.run()                                    : Starting connection thread
+[20260612-15:53:45-055] SEVERE  ACC connection thread AccConnection.run()                                    : Socket is unreachable
+java.net.PortUnreachableException
+	at java.base/sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at java.base/sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:730)
+	at java.base/sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:702)
+	at java.base/sun.nio.ch.DatagramChannelImpl.tryBlockingReceive(DatagramChannelImpl.java:659)
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingReceive(DatagramChannelImpl.java:619)
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.receive(DatagramSocketAdaptor.java:193)
+	at java.base/java.net.DatagramSocket.receive(DatagramSocket.java:638)
+	at racecontrol.client.AccConnection.run(AccConnection.java:150)
+
+[20260612-15:53:45-064] INFO    ACC connection thread AccConnection.run()                                    : Connection thread done
+[20260612-15:53:56-099] INFO    AWT-EventQueue-0     RaceControlApplet.exit()                               : Stopping Visualisation

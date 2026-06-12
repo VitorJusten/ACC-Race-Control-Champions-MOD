@@ -59,6 +59,7 @@ public class LiveTimingController
         panel.viewLeftButton.setAction(this::cycleTableModelsLeft);
         panel.viewRightButton.setAction(this::cycleTableModelsRight);
         panel.relativeCheckBox.setChangeAction(this::toggleUseRelatives);
+        panel.championshipRelativeCheckBox.setChangeAction(this::toggleChampionshipRelative);
 
         updateViewLabel();
     }
@@ -133,4 +134,9 @@ public class LiveTimingController
         updateViewLabel();
     }
 
+    private void toggleChampionshipRelative(boolean state) {
+        liveTimingTableController.useChampionshipRelative(state);
+    }
+
 }
+

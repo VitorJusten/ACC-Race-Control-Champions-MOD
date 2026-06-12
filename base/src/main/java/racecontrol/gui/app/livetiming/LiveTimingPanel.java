@@ -34,6 +34,8 @@ public class LiveTimingPanel
     protected final LPPaginatorButton viewRightButton = new LPPaginatorButton(false);
     protected final LPCheckBox relativeCheckBox = new LPCheckBox();
     private final LPLabel relativeLabel = new LPLabel("Relative");
+    protected final LPCheckBox championshipRelativeCheckBox = new LPCheckBox();
+    private final LPLabel championshipRelativeLabel = new LPLabel("Champ. relative");
     /**
      * Collapsable panel that holds the broadcasting controls.
      */
@@ -68,6 +70,8 @@ public class LiveTimingPanel
 
         addComponent(relativeCheckBox);
         addComponent(relativeLabel);
+        addComponent(championshipRelativeCheckBox);
+        addComponent(championshipRelativeLabel);
 
         collapsablePanel.setAction(() -> {
             PersistantConfig.put(BROADCASTING_CONTROLS_COLLAPSED, collapsablePanel.isCollapsed());
@@ -90,6 +94,8 @@ public class LiveTimingPanel
     public void onResize(float w, float h) {
         relativeCheckBox.setPosition(TEXT_SIZE, TEXT_SIZE / 2f);
         relativeLabel.setPosition(TEXT_SIZE * 2.5f, 0);
+        championshipRelativeCheckBox.setPosition(TEXT_SIZE * 8.5f, TEXT_SIZE / 2f);
+        championshipRelativeLabel.setPosition(TEXT_SIZE * 10f, 0);
 
         // live timing view selection.
         viewLabel.setPosition((w - viewLabel.getWidth()) / 2f, 0);
@@ -134,3 +140,4 @@ public class LiveTimingPanel
     }
 
 }
+

@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 import processing.core.PApplet;
 import racecontrol.client.model.Car;
 import racecontrol.client.model.Championship;
+import racecontrol.client.model.Driver;
 import racecontrol.gui.LookAndFeel;
 import racecontrol.gui.app.livetiming.timing.tablemodels.columns.CarNumberColumn;
 import racecontrol.gui.app.livetiming.timing.tablemodels.columns.ChampionshipDriversColumn;
@@ -27,9 +28,8 @@ import racecontrol.gui.lpui.table.LPTableColumn;
  */
 public class ChampionshipTableModel extends LiveTimingTableModel {
 
-	private final Championship championship = new Championship();
+	private final Championship championship = new Championship(false);
 	private final Map<String, BigDecimal> savedDriverPoints = championship.getDrivers();
-	private final Map<String, BigDecimal> racePoints = championship.getPoints();
 
 	@Override
 	public LPTableColumn[] getColumns() {
@@ -94,17 +94,30 @@ public class ChampionshipTableModel extends LiveTimingTableModel {
 	
 	private void pointsGainedRenderer(PApplet applet, RenderContext context) {
 		Car car = (Car) context.object;
-		BigDecimal total = racePoints.getOrDefault(String.valueOf(car.position), BigDecimal.ZERO);
+		BigDecimal total = calculatePositionPoints(car);
 		applet.fill(COLOR_WHITE);
 		applet.textAlign(PApplet.CENTER, PApplet.CENTER);
 		applet.text("+ " + total.toString(), context.width / 2f, context.height / 2f);
 	}
 
 	private BigDecimal calculatePoints(Car car) {
-		BigDecimal positionPoints = racePoints.getOrDefault(String.valueOf(car.position), BigDecimal.ZERO);
 		return car.drivers.stream()
-				.map(d -> savedDriverPoints.getOrDefault(d.fullName(), BigDecimal.ZERO).add(positionPoints))
+				.map(d -> savedDriverPoints.getOrDefault(d.fullName(), BigDecimal.ZERO).add(getPositionPoints(d, car.position)))
 				.reduce(BigDecimal.ZERO, BigDecimal::add);
+	}
+
+	private BigDecimal calculatePositionPoints(Car car) {
+		return car.drivers.stream()
+				.map(d -> getPositionPoints(d, car.position))
+				.reduce(BigDecimal.ZERO, BigDecimal::add);
+	}
+
+	private BigDecimal getPositionPoints(Driver driver, int position) {
+		return championship.getPoints(driver.category).getOrDefault(String.valueOf(position), BigDecimal.ZERO);
+	}
+
+	public void setSeparateByCategory(boolean state) {
+		championship.setSeparateByCategory(state);
 	}
 
 	@Override
