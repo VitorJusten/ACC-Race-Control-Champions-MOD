@@ -34,7 +34,7 @@ public class ChampionshipTableModel extends LiveTimingTableModel {
 	@Override
 	public LPTableColumn[] getColumns() {
 		
-		 if (championship.getDrivers().isEmpty() && championship.getPoints().isEmpty()) {
+		 if (championship.getDrivers().isEmpty() && championship.getPointsByCategory().isEmpty()) {
 		        return new LPTableColumn[]{
 		            new LPTableColumn("Championship Error")
 		                .setCellRenderer((applet, context) -> {
@@ -101,19 +101,50 @@ public class ChampionshipTableModel extends LiveTimingTableModel {
 	}
 
 	private BigDecimal calculatePoints(Car car) {
-		return car.drivers.stream()
-				.map(d -> savedDriverPoints.getOrDefault(d.fullName(), BigDecimal.ZERO).add(getPositionPoints(d, car.position)))
-				.reduce(BigDecimal.ZERO, BigDecimal::add);
+	    return car.drivers.stream()
+	            .map(d -> savedDriverPoints
+	                    .getOrDefault(d.fullName(), BigDecimal.ZERO)
+	                    .add(getPositionPoints(d, car)))
+	            .reduce(BigDecimal.ZERO, BigDecimal::add);
 	}
 
 	private BigDecimal calculatePositionPoints(Car car) {
-		return car.drivers.stream()
-				.map(d -> getPositionPoints(d, car.position))
-				.reduce(BigDecimal.ZERO, BigDecimal::add);
+	    return car.drivers.stream()
+	            .map(d -> getPositionPoints(d, car))
+	            .reduce(BigDecimal.ZERO, BigDecimal::add);
 	}
 
-	private BigDecimal getPositionPoints(Driver driver, int position) {
-		return championship.getPoints(driver.category).getOrDefault(String.valueOf(position), BigDecimal.ZERO);
+	private BigDecimal getPositionPoints(Driver driver, Car car) {
+
+	    int position = championship.isSeparateByCategory()
+	            ? getCategoryPosition(driver)
+	            : car.position;
+
+	    return championship.getPoints(driver.category)
+	            .getOrDefault(String.valueOf(position), BigDecimal.ZERO);
+	}
+	
+	private int getCategoryPosition(Driver driver) {
+
+	    int position = 1;
+
+	    for (Object obj : entries) {
+
+	        Car car = (Car) obj;
+
+	        for (Driver d : car.drivers) {
+
+	            if (d == driver) {
+	                return position;
+	            }
+
+	            if (d.category == driver.category) {
+	                position++;
+	            }
+	        }
+	    }
+
+	    return position;
 	}
 
 	public void setSeparateByCategory(boolean state) {

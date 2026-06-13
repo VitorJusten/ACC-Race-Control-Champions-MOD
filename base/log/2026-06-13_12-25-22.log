@@ -1,0 +1,247 @@
+[20260613-12:25:22-760] INFO    main                 Main.main()                                            : Version: 1.5.8
+[20260613-12:25:28-272] INFO    Animation Thread     ConnectionController.connectButtonPressed()            : Connect button pressed
+[20260613-12:25:28-274] INFO    Animation Thread     ConnectionController.connectWithInput()                : Try connecting with input
+[20260613-12:25:28-304] INFO    ACC connection thread AccConnection.run()                                    : Starting connection thread
+[20260613-12:25:28-326] INFO    ACC connection thread AccConnection.onRealtimeUpdate()                       : Initialising session
+[20260613-12:25:28-330] INFO    ACC connection thread AccConnection.onSessionChanged()                       : session changed to QUALIFYING Index:0 sessionCount:0
+[20260613-12:25:28-331] INFO    ACC connection thread GoogleSheetsAPIExtension.updateSpreadsheetTarget()     : Target Sheet changed to ""
+[20260613-12:25:28-332] INFO    ACC connection thread ResultsExtension.createNewFile()                       : Session Changed, creating dirs and files
+[20260613-12:25:28-333] INFO    ACC connection thread AccConnection.onSessionPhaseChaged()                   : session phase changed to STARTING
+[20260613-12:25:28-334] INFO    ACC connection thread AccConnection.onSessionPhaseChaged()                   : session phase changed to PREFORMATION
+[20260613-12:25:28-334] INFO    ACC connection thread AccConnection.onSessionPhaseChaged()                   : session phase changed to FORMATIONLAP
+[20260613-12:25:28-335] INFO    ACC connection thread AccConnection.onSessionPhaseChaged()                   : session phase changed to PRESESSION
+[20260613-12:25:28-336] INFO    ACC connection thread AccConnection.onSessionPhaseChaged()                   : session phase changed to SESSION
+[20260613-12:25:28-355] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #362	Aleksandr Medynskii
+[20260613-12:25:28-356] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #364	Zahar Avaev
+[20260613-12:25:28-358] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #365	Vitor Del Caro
+[20260613-12:25:28-359] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #994	Steven Wei
+[20260613-12:25:28-359] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #912	Uğur Bayrak
+[20260613-12:25:28-360] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #313	SonnY PiTT
+[20260613-12:25:28-361] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #265	Michael Turner
+[20260613-12:25:28-362] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #282	nico eggert
+[20260613-12:25:28-362] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #347	Yurii Haniavin
+[20260613-12:25:28-363] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #373	Huntunu Luch
+[20260613-12:25:28-363] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #378	Mitch Brown
+[20260613-12:25:28-364] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #381	Geilo Fox
+[20260613-12:25:28-364] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #384	Vitor Justen
+[20260613-12:25:28-367] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #387	Damien Moreau
+[20260613-12:25:28-368] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #389	Stephan van Ast
+[20260613-12:25:28-368] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #390	Simon Schmitz
+[20260613-12:25:28-370] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #392	Juan Carlos Pizarro
+[20260613-12:25:28-371] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #393	Otto Voskamp
+[20260613-12:25:28-371] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #919	XiaoMing LI
+[20260613-12:25:28-372] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #395	Mateusz Matej
+[20260613-12:25:28-385] INFO    ACC connection thread TrackDataExtension.onEvent()                           : publishing track data event
+[20260613-12:25:28-438] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.0 :#378	13:12:33	00:00:00	[Spin]
+[20260613-12:25:28-441] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.1 :#919	13:12:33	00:00:00	[Spin]
+[20260613-12:25:28-442] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.2 :#364	13:12:33	00:00:00	[Spin]
+[20260613-12:25:28-443] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.3 :#390	13:12:33	00:00:00	[Spin]
+[20260613-12:25:28-444] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.4 :#347	13:12:33	00:00:00	[Spin]
+[20260613-12:25:28-445] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.5 :#313	13:12:33	00:00:00	[Slow][Spin]
+[20260613-12:25:28-446] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.6 :#387	13:12:33	00:00:00	[Spin]
+[20260613-12:25:28-446] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.7 :#389	13:12:33	00:00:00	[Spin]
+[20260613-12:25:28-447] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.8 :#265	13:12:33	00:00:00	[Spin]
+[20260613-12:25:28-448] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.9 :#381	13:12:33	00:00:00	[Spin]
+[20260613-12:25:28-535] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.10 :#912	13:12:33	00:00:00	[Spin]
+[20260613-12:25:29-401] INFO    ACC connection thread AccConnection.lambda$0()                               : Car disconnected: #393	Otto Voskamp
+[20260613-12:25:30-912] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.11 :#392	13:12:35	00:00:00	[Spin]
+[20260613-12:25:31-994] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.12 :#373	13:12:36	00:00:00	[Spin]
+[20260613-12:25:36-729] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.13 :#373	13:12:41	00:00:00	[Spin]
+[20260613-12:25:38-563] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.14 :#919	13:12:43	00:00:00	[Slow][Spin]
+[20260613-12:25:39-841] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.15 :#364	13:12:44	00:00:00	[Spin]
+[20260613-12:25:42-635] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.16 :#373	13:12:47	00:00:00	[Spin]
+[20260613-12:25:45-724] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.17 :#392	13:12:50	00:00:00	[Spin]
+[20260613-12:25:49-224] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.18 :#364	13:12:54	00:00:00	[Spin]
+[20260613-12:25:50-430] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.19 :#389	13:12:55	00:00:00	[Spin]
+[20260613-12:25:50-672] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.20 :#392	13:12:55	00:00:00	[Spin]
+[20260613-12:25:52-923] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.21 :#347	13:12:57	00:00:00	[Spin]
+[20260613-12:25:56-755] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.22 :#392	13:13:01	00:00:00	[Spin]
+[20260613-12:25:57-573] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.23 :#347	13:13:02	00:00:00	[Spin]
+[20260613-12:25:59-847] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.24 :#362	13:13:04	00:00:00	[Spin]
+[20260613-12:26:02-059] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #394	Евгений Канин
+[20260613-12:26:02-455] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.25 :#389	13:13:07	00:00:00	[Spin]
+[20260613-12:26:03-231] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.26 :#395	13:13:08	00:00:00	[Spin]
+[20260613-12:26:03-353] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.27 :#347	13:13:08	00:00:00	[Spin]
+[20260613-12:26:03-569] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.28 :#381	13:13:08	00:00:00	[Spin]
+[20260613-12:26:04-625] INFO    ACC connection thread AccConnection.lambda$0()                               : Car disconnected: #390	Simon Schmitz
+[20260613-12:26:07-003] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.29 :#919	13:13:11	00:00:00	[Spin]
+[20260613-12:26:07-882] INFO    ACC connection thread ReplayOffsetExtension.onEvent()                        : Setting replayStartTime based on game connection time to: 1781363463133
+[20260613-12:26:07-956] INFO    ACC connection thread LapTimeExtension.onLapComplete()                       : Lap completed: #387	8:25.587	[Lap 1][PB]
+[20260613-12:26:08-961] INFO    ACC connection thread AccConnection.lambda$0()                               : Car disconnected: #313	SonnY PiTT
+[20260613-12:26:11-703] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.30 :#919	13:13:16	00:15:08	[Spin]
+[20260613-12:26:13-482] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.31 :#381	13:13:18	00:15:10	[Spin]
+[20260613-12:26:14-258] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.32 :#362	13:13:19	00:15:11	[Spin]
+[20260613-12:26:17-530] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.33 :#395	13:13:22	00:15:14	[Spin]
+[20260613-12:26:18-001] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.34 :#919	13:13:22	00:15:14	[Spin]
+[20260613-12:26:19-195] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.35 :#362	13:13:24	00:15:16	[Spin]
+[20260613-12:26:22-788] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.36 :#395	13:13:27	00:15:19	[Spin]
+[20260613-12:26:25-035] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.37 :#912	13:13:29	00:15:21	[Spin]
+[20260613-12:26:25-160] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.38 :#362	13:13:30	00:15:22	[Spin]
+[20260613-12:26:27-668] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.39 :#364	13:13:32	00:15:24	[Spin]
+[20260613-12:26:28-683] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.40 :#395	13:13:33	00:15:25	[Spin]
+[20260613-12:26:29-370] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.41 :#387	13:13:34	00:15:26	[Spin]
+[20260613-12:26:30-693] INFO    ACC connection thread ContactExtension.commitContact()                       : Contact: #373, #378	13:13:29	00:15:21
+[20260613-12:26:32-019] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.42 :#364	13:13:36	00:15:28	[Spin]
+[20260613-12:26:34-165] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.43 :#387	13:13:39	00:15:31	[Spin]
+[20260613-12:26:39-781] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.44 :#912	13:13:44	00:15:36	[Spin]
+[20260613-12:26:40-000] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.45 :#387	13:13:44	00:15:36	[Spin]
+[20260613-12:26:41-094] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.46 :#364	13:13:45	00:15:37	[Spin]
+[20260613-12:26:44-915] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.47 :#912	13:13:49	00:15:41	[Spin]
+[20260613-12:26:48-301] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.48 :#394	13:13:53	00:15:45	[Spin]
+[20260613-12:26:51-077] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.49 :#912	13:13:55	00:15:47	[Spin]
+[20260613-12:26:51-958] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.50 :#393	13:13:56	00:15:48	[Spin]
+[20260613-12:26:52-322] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.51 :#381	13:13:57	00:15:49	[Spin]
+[20260613-12:26:57-286] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.52 :#381	13:14:02	00:15:54	[Spin]
+[20260613-12:26:57-555] INFO    ACC connection thread LapTimeExtension.onLapComplete()                       : Lap completed: #389	8:32.900	[Lap 1]
+[20260613-12:27:00-311] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.53 :#364	13:14:05	00:15:57	[Spin]
+[20260613-12:27:00-312] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.54 :#265	13:14:05	00:15:57	[Spin]
+[20260613-12:27:03-930] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.55 :#394	13:14:08	00:16:00	[Spin]
+[20260613-12:27:06-227] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.56 :#393	13:14:11	00:16:03	[Spin]
+[20260613-12:27:06-677] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.57 :#381	13:14:11	00:16:03	[Spin]
+[20260613-12:27:09-047] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.58 :#394	13:14:13	00:16:05	[Spin]
+[20260613-12:27:11-348] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.59 :#393	13:14:16	00:16:08	[Spin]
+[20260613-12:27:12-170] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.60 :#347	13:14:17	00:16:09	[Spin]
+[20260613-12:27:14-327] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.61 :#265	13:14:19	00:16:11	[Spin]
+[20260613-12:27:15-272] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.62 :#394	13:14:20	00:16:12	[Spin]
+[20260613-12:27:16-532] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.63 :#373	13:14:21	00:16:13	[Spin]
+[20260613-12:27:17-123] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.64 :#393	13:14:22	00:16:13	[Spin]
+[20260613-12:27:18-849] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.65 :#392	13:14:23	00:16:15	[Spin]
+[20260613-12:27:19-602] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.66 :#265	13:14:24	00:16:16	[Spin]
+[20260613-12:27:25-907] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.67 :#265	13:14:30	00:16:22	[Spin]
+[20260613-12:27:26-016] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.68 :#381	13:14:30	00:16:22	[Spin]
+[20260613-12:27:29-719] INFO    ACC connection thread AccConnection.lambda$0()                               : Car disconnected: #389	Stephan van Ast
+[20260613-12:27:31-516] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.69 :#364	13:14:36	00:16:28	[Spin]
+[20260613-12:27:32-971] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.70 :#362	13:14:37	00:16:29	[Spin]
+[20260613-12:27:33-173] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.71 :#373	13:14:38	00:16:30	[Spin]
+[20260613-12:27:38-673] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.72 :#347	13:14:43	00:16:35	[Spin]
+[20260613-12:27:39-112] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.73 :#395	13:14:44	00:16:35	[Spin]
+[20260613-12:27:39-888] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.74 :#373	13:14:44	00:16:36	[Spin]
+[20260613-12:27:43-321] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.75 :#364	13:14:48	00:16:40	[Spin]
+[20260613-12:27:43-679] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.76 :#347	13:14:48	00:16:40	[Spin]
+[20260613-12:27:46-678] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.77 :#373	13:14:51	00:16:43	[Spin]
+[20260613-12:27:49-548] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.78 :#347	13:14:54	00:16:46	[Spin]
+[20260613-12:27:51-178] INFO    ACC connection thread ContactExtension.findOtherCars()                       : Contact: ?#919		11,60m	13:14:50
+[20260613-12:27:51-179] INFO    ACC connection thread ContactExtension.commitContact()                       : Contact: #378, #919	13:14:50	00:16:42
+[20260613-12:27:52-092] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #396	Dmitrij MURAVEV
+[20260613-12:27:57-707] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.79 :#912	13:15:02	00:16:54	[Spin]
+[20260613-12:27:58-041] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.80 :#381	13:15:02	00:16:54	[Spin]
+[20260613-12:27:59-920] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.81 :#362	13:15:04	00:16:56	[Spin]
+[20260613-12:28:04-998] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.82 :#362	13:15:09	00:17:01	[Spin]
+[20260613-12:28:07-015] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.83 :#395	13:15:11	00:17:03	[Spin]
+[20260613-12:28:09-674] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.84 :#381	13:15:14	00:17:06	[Spin]
+[20260613-12:28:10-869] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.85 :#362	13:15:15	00:17:07	[Spin]
+[20260613-12:28:12-104] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.86 :#395	13:15:17	00:17:08	[Spin]
+[20260613-12:28:16-848] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #397	Gustavo Nascimento
+[20260613-12:28:17-830] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.87 :#395	13:15:22	00:17:14	[Spin]
+[20260613-12:28:25-114] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.88 :#912	13:15:30	00:17:21	[Spin]
+[20260613-12:28:27-183] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.89 :#378	13:15:32	00:17:24	[Spin]
+[20260613-12:28:30-050] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.90 :#912	13:15:34	00:17:26	[Spin]
+[20260613-12:28:35-878] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.91 :#912	13:15:40	00:17:32	[Spin]
+[20260613-12:28:37-775] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.92 :#265	13:15:42	00:17:34	[Spin]
+[20260613-12:28:46-961] INFO    ACC connection thread LapTimeExtension.onLapComplete()                       : Lap completed: #364	8:32.922	[Inlap]
+[20260613-12:28:49-024] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.93 :#396	13:15:53	00:17:45	[Spin]
+[20260613-12:28:49-249] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.94 :#378	13:15:54	00:17:46	[Spin]
+[20260613-12:28:58-457] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.95 :#373	13:16:03	00:17:55	[Spin]
+[20260613-12:29:05-885] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.96 :#396	13:16:10	00:18:02	[Spin]
+[20260613-12:29:07-151] INFO    ACC connection thread AccConnection.lambda$0()                               : Car disconnected: #397	Gustavo Nascimento
+[20260613-12:29:11-260] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.97 :#396	13:16:16	00:18:08	[Spin]
+[20260613-12:29:17-454] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.98 :#396	13:16:22	00:18:14	[Spin]
+[20260613-12:29:25-680] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.99 :#373	13:16:30	00:18:22	[Spin]
+[20260613-12:29:27-284] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.100 :#381	13:16:32	00:18:24	[Spin]
+[20260613-12:29:30-603] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.101 :#373	13:16:35	00:18:27	[Spin]
+[20260613-12:29:32-355] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.102 :#381	13:16:37	00:18:29	[Spin]
+[20260613-12:29:34-309] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.103 :#378	13:16:39	00:18:31	[Spin]
+[20260613-12:29:36-498] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.104 :#373	13:16:41	00:18:33	[Spin]
+[20260613-12:29:38-473] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.105 :#381	13:16:43	00:18:35	[Spin]
+[20260613-12:29:44-109] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.106 :#364	13:16:49	00:18:40	[Spin]
+[20260613-12:29:47-187] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.107 :#392	13:16:52	00:18:44	[Spin]
+[20260613-12:29:52-667] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.108 :#378	13:16:57	00:18:49	[Spin]
+[20260613-12:29:55-812] INFO    ACC connection thread AccConnection.lambda$0()                               : Car disconnected: #347	Yurii Haniavin
+[20260613-12:29:57-505] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.109 :#378	13:17:02	00:18:54	[Spin]
+[20260613-12:29:57-604] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.110 :#364	13:17:02	00:18:54	[Spin]
+[20260613-12:30:02-337] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.111 :#919	13:17:07	00:18:59	[Spin]
+[20260613-12:30:02-670] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.112 :#364	13:17:07	00:18:59	[Spin]
+[20260613-12:30:02-901] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.113 :#378	13:17:07	00:18:59	[Spin]
+[20260613-12:30:08-649] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.114 :#364	13:17:13	00:19:05	[Spin]
+[20260613-12:30:12-777] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.115 :#387	13:17:17	00:19:09	[Spin]
+[20260613-12:30:20-994] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.116 :#919	13:17:25	00:19:17	[Spin]
+[20260613-12:30:25-876] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.117 :#919	13:17:30	00:19:22	[Spin]
+[20260613-12:30:32-129] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.118 :#919	13:17:37	00:19:28	[Spin]
+[20260613-12:30:34-038] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.119 :#392	13:17:38	00:19:30	[Spin]
+[20260613-12:30:49-584] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.120 :#393	13:17:54	00:19:46	[Spin]
+[20260613-12:30:52-270] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.121 :#394	13:17:57	00:19:49	[Spin]
+[20260613-12:30:56-116] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.122 :#387	13:18:01	00:19:52	[Spin]
+[20260613-12:31:17-113] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.123 :#392	13:18:22	00:20:13	[Spin]
+[20260613-12:31:27-497] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.124 :#392	13:18:32	00:20:24	[Spin]
+[20260613-12:31:33-470] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.125 :#393	13:18:38	00:20:30	[Spin]
+[20260613-12:31:33-915] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.126 :#387	13:18:38	00:20:30	[Spin]
+[20260613-12:31:37-115] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.127 :#394	13:18:42	00:20:33	[Spin]
+[20260613-12:31:39-121] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.128 :#378	13:18:44	00:20:35	[Slow][Spin]
+[20260613-12:31:39-765] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.129 :#919	13:18:44	00:20:36	[Spin]
+[20260613-12:31:43-190] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.130 :#387	13:18:48	00:20:40	[Spin]
+[20260613-12:31:48-318] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.131 :#395	13:18:53	00:20:45	[Spin]
+[20260613-12:31:52-000] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #398	Vasco Almeida
+[20260613-12:32:10-609] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.132 :#912	13:19:15	00:21:07	[Spin]
+[20260613-12:32:11-174] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.133 :#392	13:19:16	00:21:08	[Spin]
+[20260613-12:32:11-514] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.134 :#919	13:19:16	00:21:08	[Spin]
+[20260613-12:32:12-750] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.135 :#393	13:19:17	00:21:09	[Spin]
+[20260613-12:32:15-573] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.136 :#394	13:19:20	00:21:12	[Spin]
+[20260613-12:32:15-768] INFO    ACC connection thread AccConnection.onEntryListCarUpdate()                   : Car connected: #399	Axt Schwinger
+[20260613-12:32:15-955] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.137 :#392	13:19:20	00:21:12	[Spin]
+[20260613-12:32:16-520] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.138 :#919	13:19:21	00:21:13	[Spin]
+[20260613-12:32:22-043] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.139 :#387	13:19:26	00:21:18	[Spin]
+[20260613-12:32:22-043] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.140 :#265	13:19:26	00:21:18	[Spin]
+[20260613-12:32:22-371] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.141 :#919	13:19:27	00:21:19	[Spin]
+[20260613-12:32:22-481] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.142 :#393	13:19:27	00:21:19	[Spin]
+[20260613-12:32:25-050] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.143 :#394	13:19:29	00:21:21	[Spin]
+[20260613-12:32:26-033] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.144 :#392	13:19:30	00:21:22	[Spin]
+[20260613-12:32:26-259] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.145 :#387	13:19:31	00:21:23	[Spin]
+[20260613-12:32:27-161] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.146 :#265	13:19:32	00:21:24	[Spin]
+[20260613-12:32:31-918] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.147 :#395	13:19:36	00:21:28	[Spin]
+[20260613-12:32:33-154] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.148 :#265	13:19:38	00:21:30	[Spin]
+[20260613-12:32:35-647] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.149 :#387	13:19:40	00:21:32	[Spin]
+[20260613-12:32:36-884] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.150 :#364	13:19:41	00:21:33	[Spin]
+[20260613-12:32:46-657] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.151 :#392	13:19:51	00:21:43	[Spin]
+[20260613-12:32:50-646] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.152 :#364	13:19:55	00:21:47	[Spin]
+[20260613-12:32:54-550] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.153 :#387	13:19:59	00:21:51	[Spin]
+[20260613-12:32:54-892] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.154 :#912	13:19:59	00:21:51	[Spin]
+[20260613-12:32:55-564] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.155 :#364	13:20:00	00:21:52	[Spin]
+[20260613-12:32:59-674] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.156 :#396	13:20:04	00:21:56	[Spin]
+[20260613-12:33:01-428] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.157 :#364	13:20:06	00:21:58	[Spin]
+[20260613-12:33:02-611] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.158 :#393	13:20:07	00:21:59	[Spin]
+[20260613-12:33:04-598] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.159 :#394	13:20:09	00:22:01	[Spin]
+[20260613-12:33:06-956] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.160 :#393	13:20:11	00:22:03	[Spin]
+[20260613-12:33:08-525] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.161 :#373	13:20:13	00:22:05	[Spin]
+[20260613-12:33:09-198] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.162 :#362	13:20:14	00:22:06	[Spin]
+[20260613-12:33:09-319] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.163 :#394	13:20:14	00:22:06	[Spin]
+[20260613-12:33:09-780] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.164 :#395	13:20:14	00:22:06	[Spin]
+[20260613-12:33:10-679] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.165 :#381	13:20:15	00:22:07	[Spin]
+[20260613-12:33:17-343] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.166 :#393	13:20:22	00:22:14	[Spin]
+[20260613-12:33:18-797] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.167 :#394	13:20:23	00:22:15	[Spin]
+[20260613-12:33:19-129] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.168 :#395	13:20:24	00:22:15	[Spin]
+[20260613-12:33:22-027] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.169 :#392	13:20:26	00:22:18	[Spin]
+[20260613-12:33:23-585] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.170 :#362	13:20:28	00:22:20	[Spin]
+[20260613-12:33:28-163] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.171 :#399	13:20:33	00:22:25	[Spin]
+[20260613-12:33:28-276] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.172 :#362	13:20:33	00:22:25	[Spin]
+[20260613-12:33:31-166] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.173 :#378	13:20:36	00:22:28	[Spin]
+[20260613-12:33:32-885] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.174 :#919	13:20:37	00:22:29	[Spin]
+[20260613-12:33:33-782] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.175 :#912	13:20:38	00:22:30	[Spin]
+[20260613-12:33:34-118] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.176 :#362	13:20:39	00:22:30	[Spin]
+[20260613-12:33:35-222] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.177 :#392	13:20:40	00:22:32	[Spin]
+[20260613-12:33:37-011] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.178 :#393	13:20:41	00:22:33	[Spin]
+[20260613-12:33:38-933] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.179 :#394	13:20:43	00:22:35	[Spin]
+[20260613-12:33:40-255] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.180 :#919	13:20:45	00:22:37	[Spin]
+[20260613-12:33:42-398] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.181 :#399	13:20:47	00:22:39	[Spin]
+[20260613-12:33:43-509] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.182 :#912	13:20:48	00:22:40	[Spin]
+[20260613-12:33:43-852] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.183 :#265	13:20:48	00:22:40	[Spin]
+[20260613-12:33:44-970] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.184 :#396	13:20:49	00:22:41	[Spin]
+[20260613-12:33:46-312] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.185 :#378	13:20:51	00:22:43	[Spin]
+[20260613-12:33:47-330] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.186 :#399	13:20:52	00:22:44	[Spin]
+[20260613-12:33:53-194] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.187 :#399	13:20:58	00:22:50	[Spin]
+[20260613-12:33:54-639] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.188 :#381	13:20:59	00:22:51	[Spin]
+[20260613-12:34:00-022] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.189 :#395	13:21:04	00:22:56	[Spin]
+[20260613-12:34:02-824] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.190 :#398	13:21:07	00:22:59	[Spin]
+[20260613-12:34:04-084] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.191 :#395	13:21:08	00:23:00	[Spin]
+[20260613-12:34:08-974] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.192 :#393	13:21:13	00:23:05	[Spin]
+[20260613-12:34:10-100] INFO    ACC connection thread DangerDetectionExtension.setYellowFlag()               : Yellow Flag nr.193 :#394	13:21:14	00:23:06	[Spin]
+[20260613-12:34:10-407] INFO    AWT-EventQueue-0     RaceControlApplet.exit()                               : Stopping Visualisation

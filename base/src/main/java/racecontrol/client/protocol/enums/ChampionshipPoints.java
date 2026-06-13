@@ -6,7 +6,7 @@ public enum ChampionshipPoints {
 	SILVER(DriverCategory.SILVER, "/silver-points.json"),
 	GOLD(DriverCategory.GOLD, "/gold-points.json"), 
 	PLATINUM(DriverCategory.PLATINUM, "/platinum-points.json"),
-	GENERAL(null, "/general.json");
+	GENERAL(null, "/general-points.json");
 
 	private DriverCategory category;
 	private String filePath;

@@ -1,0 +1,19 @@
+[20260613-00:23:47-383] INFO    main                 Main.main()                                            : Version: 1.5.8
+[20260613-00:23:49-968] SEVERE  Animation Thread     Main$UncoughtExceptionHandler.uncaughtException()      : Uncought exception:
+java.lang.Error: Unresolved compilation problems: 
+	ChampionshipPoints cannot be resolved to a variable
+	ChampionshipPoints cannot be resolved to a type
+	ChampionshipPoints cannot be resolved
+
+	at racecontrol.client.model.Championship.loadChampionshipData(Championship.java:46)
+	at racecontrol.client.model.Championship.<init>(Championship.java:33)
+	at racecontrol.gui.app.livetiming.timing.tablemodels.ChampionshipTableModel.<init>(ChampionshipTableModel.java:31)
+	at racecontrol.gui.app.livetiming.timing.LiveTimingTableController.<init>(LiveTimingTableController.java:62)
+	at racecontrol.gui.app.livetiming.LiveTimingController.<init>(LiveTimingController.java:52)
+	at racecontrol.gui.app.AppController.<init>(AppController.java:58)
+	at racecontrol.gui.RaceControlApplet.setup(RaceControlApplet.java:95)
+	at processing.core.PApplet.handleDraw(PApplet.java:2412)
+	at processing.awt.PSurfaceAWT$12.callDraw(PSurfaceAWT.java:1557)
+	at processing.core.PSurfaceNone$AnimationThread.run(PSurfaceNone.java:316)
+
+[20260613-00:24:07-224] INFO    AWT-EventQueue-0     RaceControlApplet.exit()                               : Stopping Visualisation

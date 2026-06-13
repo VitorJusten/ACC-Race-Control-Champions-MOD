@@ -15,96 +15,85 @@ import racecontrol.client.protocol.enums.DriverCategory;
 
 /**
  * Champions MOD 2026
+ * 
  * @author Vitor Justen
  */
 public class Championship {
 
 	private Boolean separateByCategory = false;
-    private Map<String, BigDecimal> points = new LinkedHashMap<>();
-    private Map<DriverCategory, Map<String, BigDecimal>> pointsByCategory = new HashMap<>();
-    private Map<String, BigDecimal> drivers = new LinkedHashMap<>();
+	private Map<DriverCategory, Map<String, BigDecimal>> pointsByCategory = new HashMap<>();
+	private Map<String, BigDecimal> drivers = new LinkedHashMap<>();
 
-    public Championship() {
-        this(false);
-    }
+	public Championship() {
+		this(false);
+	}
 
-    public Championship(Boolean separateByCategory) {
-        this.separateByCategory = separateByCategory;
-        loadChampionshipData();
-    }
+	public Championship(Boolean separateByCategory) {
+		this.separateByCategory = separateByCategory;
+		loadChampionshipData();
+	}
 
-    private void loadChampionshipData() {
+	private void loadChampionshipData() {
 
-        String championshipPath = System.getProperty("user.dir") + "/championship";
+		String championshipPath = System.getProperty("user.dir") + "/championship";
 
-        ObjectMapper mapper = new ObjectMapper();
+		ObjectMapper mapper = new ObjectMapper();
 
-        try {
+		try {
 
-            File driversFile = new File(championshipPath + "/drivers.json");
+			File driversFile = new File(championshipPath + "/drivers.json");
 
-            this.points = readPointsFile(mapper, championshipPath, ChampionshipPoints.GENERAL);
-            for (ChampionshipPoints pointFile : ChampionshipPoints.values()) {
-                if (pointFile.getCategory() != null) {
-                    pointsByCategory.put(pointFile.getCategory(), readPointsFile(mapper, championshipPath, pointFile));
-                }
-            }
+			for (ChampionshipPoints pointFile : ChampionshipPoints.values()) {
+				pointsByCategory.put(pointFile.getCategory(), readPointsFile(mapper, championshipPath, pointFile));
+			}
 
-            this.drivers = mapper.readValue(
-                    driversFile,
-                    new TypeReference<Map<String, BigDecimal>>() {}
-            );
-            
-        } catch (IOException e) {
-        	//Inicialize default values
-        	points.put("1", BigDecimal.ZERO);
-        	drivers.put("", BigDecimal.ZERO);
-        	System.err.println("Warning: Could not load championship data: " + e.getMessage());
-        }
-    }
+			this.drivers = mapper.readValue(driversFile, new TypeReference<Map<String, BigDecimal>>() {
+			});
 
-    private Map<String, BigDecimal> readPointsFile(ObjectMapper mapper, String championshipPath, ChampionshipPoints pointFile)
-            throws IOException {
-        File file = new File(championshipPath + "/points" + pointFile.getFilePath());
-        return mapper.readValue(file, new TypeReference<Map<String, BigDecimal>>() {});
-    }
+		} catch (IOException e) {
+			System.err.println("Warning: Could not load championship data: " + e.getMessage());
+		}
+	}
 
-    public Map<String, BigDecimal> getPoints(DriverCategory category) {
-        if (!separateByCategory) {
-            return points;
-        }
-        return pointsByCategory.getOrDefault(category, points);
-    }
+	private Map<String, BigDecimal> readPointsFile(ObjectMapper mapper, String championshipPath,
+			ChampionshipPoints pointFile) throws IOException {
 
-    public Boolean isSeparateByCategory() {
-        return separateByCategory;
-    }
+		File file = new File(championshipPath + "/points" + pointFile.getFilePath());
 
-    public void setSeparateByCategory(Boolean separateByCategory) {
-        this.separateByCategory = separateByCategory;
-    }
+		return mapper.readValue(file, new TypeReference<Map<String, BigDecimal>>() {
+		});
+	}
 
-    public Map<String, BigDecimal> getPoints() {
-        return points;
-    }
+	public Map<String, BigDecimal> getPoints(DriverCategory category) {
+		if (!separateByCategory) {
+			return pointsByCategory.getOrDefault(null, new LinkedHashMap<>());
+		}
 
-    public void setPoints(Map<String, BigDecimal> points) {
-        this.points = points;
-    }
+		return pointsByCategory.getOrDefault(category,
+				pointsByCategory.getOrDefault(null, new LinkedHashMap<>()));
+	}
 
-    public Map<DriverCategory, Map<String, BigDecimal>> getPointsByCategory() {
-        return pointsByCategory;
-    }
+	public Boolean isSeparateByCategory() {
+		return separateByCategory;
+	}
 
-    public void setPointsByCategory(Map<DriverCategory, Map<String, BigDecimal>> pointsByCategory) {
-        this.pointsByCategory = pointsByCategory;
-    }
+	public void setSeparateByCategory(Boolean separateByCategory) {
+		this.separateByCategory = separateByCategory;
+	}
 
-    public Map<String, BigDecimal> getDrivers() {
-        return drivers;
-    }
+	public Map<DriverCategory, Map<String, BigDecimal>> getPointsByCategory() {
+		return pointsByCategory;
+	}
 
-    public void setDrivers(Map<String, BigDecimal> drivers) {
-        this.drivers = drivers;
-    }
+	public void setPointsByCategory(Map<DriverCategory, Map<String, BigDecimal>> pointsByCategory) {
+		this.pointsByCategory = pointsByCategory;
+	}
+
+	public Map<String, BigDecimal> getDrivers() {
+		return drivers;
+	}
+
+	public void setDrivers(Map<String, BigDecimal> drivers) {
+		this.drivers = drivers;
+	}
 }
